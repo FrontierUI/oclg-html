@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Your Lending For Life | OCLG Lending Group</title>
+
+    <link rel="stylesheet" href="assets/css/globals.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      .testiSlide {
+        width: 100%;
+      }
+
+      .testiSlide img {
+        filter: grayscale(100%);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: transform;
+        transition-duration: 0.5s ease-in-out;
+      }
+
+      .testiSlide.slick-center img {
+        transform: scale(1.4);
+        filter: grayscale(0);
+      }
+
+      .testiSlide .content {
+        display: none;
+        overflow: hidden;
+      }
+      .testiSlide.slick-center .content {
+        display: block;
+        width: 100%;
+      }
+
+      @media screen and (min-width: 1024px) {
+        .testiSlide.slick-center .content {
+          width: 100% !important;
+        }
+        .testiSlide.slick-center .content p {
+          width: 100% !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main
+      class="wrapperdd relative w-full h-full z-[1] overflow-x-hidden oclgHome"
+    >
+      <section class="relative w-full h-full oclgHero">
+        <header
+          class="flex py-4 px-5 sm:px-10 bg-transparent min-h-[70px] tracking-wide relative z-50"
+        >
+          <div class="flex flex-wrap items-center justify-between gap-4 w-full">
+            <a href="index.html" class="hidden max-sm:block">
+              <h1 class="grifter text-3xl lg:text-4xl">
+                OC<span class="text-[#24ACE7]">LG</span>
+              </h1>
+            </a>
+
+            <div
+              id="collapseMenu"
+              class="max-lg:hidden lg:block max-lg:w-full lg:w-full max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
+            >
+              <button
+                id="toggleClose"
+                class="lg:hidden fixed top-4 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3.5 h-3.5 fill-black"
+                  viewBox="0 0 320.591 320.591"
+                >
+                  <path
+                    d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                    data-original="#000000"
+                  ></path>
+                  <path
+                    d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                    data-original="#000000"
+                  ></path>
+                </svg>
+              </button>
+
+              <ul
+                class="lg:flex lg:items-center lg:justify-between lg:w-full lg:gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
+              >
+                <li class="mb-6 hidden max-lg:block">
+                  <a href="index.html">
+                    <h1 class="grifter text-3xl lg:text-4xl">
+                      OC<span class="text-[#24ACE7]">LG</span>
+                    </h1>
+                  </a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-3 px-3">
+                  <a
+                    href="index.html"
+                    class="hover:text-blue-700 text-blue-700 block font-medium text-[17px]"
+                    >Home</a
+                  >
+                </li>
+                <li class="max-lg:border-b max-lg:py-3 px-3">
+                  <a
+                    href="about-us.html"
+                    class="hover:text-blue-700 text-slate-900 block font-medium text-[17px]"
+                    >About Us</a
+                  >
+                </li>
+
+                <li class="hidden lg:block">
+                  <a href="index.html">
+                    <h1 class="grifter text-3xl lg:text-4xl">
+                      OC<span class="text-[#24ACE7]">LG</span>
+                    </h1>
+                  </a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-3 px-3">
+                  <a
+                    href="apply-now.html"
+                    class="hover:text-blue-700 text-slate-900 block font-medium text-[17px]"
+                    >Apply Now!</a
+                  >
+                </li>
+                <li class="max-lg:border-b max-lg:py-3 px-3">
+                  <a
+                    href="javascript:void(0)"
+                    class="hover:text-blue-700 text-slate-900 block font-medium text-[17px]"
+                    >Contact Me</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="max-lg:flex hidden items-center ml-auto space-x-6">
+              <button id="toggleOpen" class="lg:hidden">
+                <svg
+                  class="w-7 h-7"
+                  fill="#333"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <div class="relative w-full min-h-screen h-full max-lg:px-5 sm:pl-10">
+          <div class="itemStart relative flex-col space-y-5 w-full h-full">
+            <div class="relative top-10 flex flex-col itemStart gap-y-4">
+              <a href="javascript:void(0)" class="w-12">
+                <img src="assets/images/fbGrey.svg" class="img-fluid" alt="" />
+              </a>
+              <a href="javascript:void(0)" class="w-12">
+                <img src="assets/images/xGrey.svg" class="img-fluid" alt="" />
+              </a>
+              <a href="javascript:void(0)" class="w-12">
+                <img
+                  src="assets/images/instaGrey.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div
+              class="relative flex w-full items-start justify-start max-lg:top-24 lg:top-16"
+            >
+              <div
+                class="itemStart relative w-full md:w-1/3 flex-col space-y-4"
+              >
+                <div
+                  class="itemStart flex-col text-5xl md:text-7xl uppercase space-y-0 leading-none"
+                >
+                  <h1 class="grifter">Your</h1>
+                  <h1 class="grifter">lender</h1>
+                  <h1 class="grifter text-[#24ACE7]">for life</h1>
+                </div>
+                <div class="itemStart">
+                  <p>With you every step of the way.</p>
+                </div>
+                <div class="itemStart gap-5">
+                  <a
+                    href="apply-now.html"
+                    class="py-4 px-8 bg-[#A4E4FF] rounded-md !text-[#24ACE7] font-medium"
+                    >Apply Now</a
+                  >
+                  <a
+                    href="javascript:void(0)"
+                    class="py-4 px-8 bg-[#24ACE7] rounded-md !text-white font-medium"
+                    >Request A Call</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="relative w-full h-full">
+              <div
+                class="absolute max-lg:-right-[6rem] lg:-right-[10rem] max-lg:-bottom-[22rem] lg:-bottom-[6.75rem] h-full w-full max-w-[25rem] lg:max-w-[62rem] max-lg:h-[30vh] lg:h-screen -z-[1] bg-center bg-contain bg-no-repeat"
+                style="background-image: url('/assets/images/manHomehero.png')"
+              ></div>
+
+              <div
+                class="absolute max-lg:right-[1rem] lg:right-20 max-lg:-bottom-[14rem] lg:bottom-10 size-14 lg:size-24 bg-white/65 p-4 -rotate-[25deg] rounded-r-lg rounded-b-lg shadow-xl"
+              >
+                <img
+                  src="assets/images/moneyBag.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="absolute max-lg:left-[8rem] lg:right-150 max-lg:-bottom-[17rem] lg:bottom-10 size-22 lg:size-36 bg-white/65 p-3 rotate-[25deg] rounded-l-lg rounded-b-lg shadow-xl"
+              >
+                <img
+                  src="assets/images/dollarBill.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="absolute max-lg:right-[2rem] lg:right-150 max-lg:bottom-20 lg:bottom-72 size-16 lg:size-24 bg-white/65 p-4 -rotate-[25deg] rounded-r-lg rounded-b-lg shadow-xl"
+              >
+                <img src="assets/images/coin.png" class="img-fluid" alt="" />
+              </div>
+
+              <div
+                class="absolute max-lg:right-5 max-lg:-bottom-[22rem] lg:-bottom-14 lg:right-28 flex items-center gap-x-4 bg-white/50 rounded-full p-2 max-w-[345px] w-full"
+              >
+                <img src="assets/images/reviewsGroup.png" class="h-10" alt="" />
+                <div class="flex items-center w-full">
+                  <i class="ri-star-fill text-yellow-400 text-2xl"></i>
+                  <span class="text-black text-lg pl-1">5.1 (2.5k review)</span>
+                </div>
+              </div>
+
+              <div
+                class="hidden lg:flex items-center justify-center absolute -bottom-14 right-10 bg-white/50 rounded-full p-4 size-12"
+              >
+                <i class="ri-arrow-right-up-line text-3xl font-bold"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative h-full w-full purchased">
+        <div class="flexy w-full h-full px-5 max-lg:pb-10 lg:py-10 sm:px-10">
+          <div class="grid grid-cols-12 w-full h-full gap-y-5 gap-x-8 mx-auto">
+            <div
+              class="purchasing col-span-12 lg:col-span-4 relative flexy w-full min-h-96 text-white bg-[#24ACE7] rounded-lg z-[1] overflow-hidden"
+            >
+              <div
+                class="absolute -top-1 right-0 w-full h-full max-w-[15rem] max-h-[14rem] bg-contain bg-center bg-no-repeat -z-[1]"
+                style="background-image: url('/assets/images/purchasePatt.svg')"
+              ></div>
+              <div class="flexy flex-col w-full h-full space-y-4 text-center">
+                <div
+                  class="flexy w-[8rem] h-[8rem] p-5 rounded-full border-2 border-white"
+                >
+                  <img src="assets/images/home.svg" class="img-fluid" alt="" />
+                </div>
+                <div class="flexy flex-col text-center uppercase text-3xl">
+                  <h2 class="grifter leading-none">Home</h2>
+                  <h2 class="grifter leading-none">purchasing</h2>
+                </div>
+                <div class="flexy flex-col">
+                  <p class="sm:text-xl">With you every step</p>
+                  <p class="sm:text-xl">of the way</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="purchasing col-span-12 lg:col-span-4 relative flexy w-full min-h-96 text-white bg-[#24ACE7] rounded-lg z-[1] overflow-hidden"
+            >
+              <div
+                class="absolute -top-1 right-0 w-full h-full max-w-[15rem] max-h-[14rem] bg-contain bg-center bg-no-repeat -z-[1]"
+                style="background-image: url('/assets/images/purchasePatt.svg')"
+              ></div>
+              <div class="flexy flex-col w-full h-full space-y-4 text-center">
+                <div
+                  class="flexy w-[8rem] h-[8rem] p-5 rounded-full border-2 border-white"
+                >
+                  <img
+                    src="assets/images/percent.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="flexy flex-col text-center uppercase text-3xl">
+                  <h2 class="grifter leading-none">Home</h2>
+                  <h2 class="grifter leading-none">purchasing</h2>
+                </div>
+                <div class="flexy flex-col">
+                  <p class="sm:text-xl">Apply for a lower interest</p>
+                  <p class="sm:text-xl">rate on your mortgage.</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="purchasing col-span-12 lg:col-span-4 relative flexy w-full min-h-96 text-white bg-[#24ACE7] rounded-lg z-[1] overflow-hidden"
+            >
+              <div
+                class="absolute -top-1 right-0 w-full h-full max-w-[15rem] max-h-[14rem] bg-contain bg-center bg-no-repeat -z-[1]"
+                style="background-image: url('/assets/images/purchasePatt.svg')"
+              ></div>
+              <div class="flexy flex-col w-full h-full space-y-4 text-center">
+                <div
+                  class="flexy w-[8rem] h-[8rem] p-5 rounded-full border-2 border-white"
+                >
+                  <img src="assets/images/lock.svg" class="w-20 h-20" alt="" />
+                </div>
+                <div class="flexy flex-col text-center uppercase text-3xl">
+                  <h2 class="grifter leading-none">Home</h2>
+                  <h2 class="grifter leading-none">purchasing</h2>
+                </div>
+                <div class="flexy flex-col">
+                  <p class="sm:text-xl">Apply for a lower interest</p>
+                  <p class="sm:text-xl">rate on your mortgage.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative w-full h-full trackin">
+        <div class="flexy relative w-full h-full sm:px-10 py-10 lg:pt-16">
+          <div
+            class="absolute z-10 top-4 left-20 w-28 h-28 p-4 bg-white/65 rounded-b-md rounded-l-md shadow-lg -rotate-[25deg]"
+          >
+            <img src="assets/images/moneyBag.png" class="img-fluid" alt="" />
+          </div>
+          <div
+            class="absolute z-10 bottom-2 right-24 w-32 h-32 p-3 bg-white/65 rounded-b-md rounded-l-md shadow-lg rotate-[35deg]"
+          >
+            <img src="assets/images/dollarBill.png" class="img-fluid" alt="" />
+          </div>
+
+          <div
+            class="flexy relative bg-[#24ACE7] text-white overflow-hidden rounded-2xl w-full z-[1]"
+          >
+            <div
+              class="hidden lg:block absolute top-0 right-0 w-[27rem] h-[28rem] bg-contain bg-center bg-no-repeat -z-[1]"
+              style="background-image: url('/assets/images/trackPatt.svg')"
+            ></div>
+
+            <div
+              class="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-5 w-full h-full p-5 lg:p-10"
+            >
+              <div class="relative w-full h-full lg:w-1/2">
+                <div
+                  class="relative flex items-center lg:items-end justify-center lg:justify-end py-5"
+                >
+                  <div
+                    class="relative flex items-end justify-center max-w-sm lg:max-w-lg"
+                  >
+                    <img
+                      src="assets/images/clien.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <ul
+                  class="itemStart flex-col absolute lg:left-10 lg:bottom-10 z-10 space-y-4 max-w-xs md:max-w-md"
+                >
+                  <li
+                    class="justStart px-5 py-4 w-full flexy rounded-b-md rounded-l-md gap-x-4 bg-white/60"
+                  >
+                    <img
+                      src="assets/images/trackChart.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <div
+                      class="itemStart flex-col !text-[#333] space-y-0 uppercase text-2xl leading-none"
+                    >
+                      <h3 class="grifter">proven track</h3>
+                      <h3 class="grifter">record</h3>
+                    </div>
+                  </li>
+                  <li
+                    class="justStart px-5 py-4 w-full flexy rounded-b-md rounded-l-md gap-x-4 bg-white/60"
+                  >
+                    <img
+                      src="assets/images/comperHeart.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <div
+                      class="itemStart flex-col !text-[#333] space-y-0 uppercase text-2xl leading-none"
+                    >
+                      <h3 class="grifter">Comprehensive</h3>
+                      <h3 class="grifter">Services</h3>
+                    </div>
+                  </li>
+                  <li
+                    class="justStart px-5 py-4 w-full flexy rounded-b-md rounded-l-md gap-x-4 bg-white/60"
+                  >
+                    <img
+                      src="assets/images/userClient.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <div
+                      class="itemStart flex-col !text-[#333] space-y-0 uppercase text-2xl leading-none"
+                    >
+                      <h3 class="grifter">Client</h3>
+                      <h3 class="grifter">Commitment</h3>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="relative justStart w-full h-full lg:w-1/2 max-lg:pt-76 max-lg:pb-10"
+              >
+                <div class="itemStart flex-col space-y-5">
+                  <div
+                    class="itemStart flex-col space-y-0 uppercase text-4xl lg:text-6xl leading-none"
+                  >
+                    <h1 class="grifter">A proven</h1>
+                    <h1 class="grifter">track</h1>
+                    <h1 class="grifter">record</h1>
+                  </div>
+                  <div class="itemStart md:w-[77%] lg:text-lg">
+                    <p>
+                      Omar Omares is the No. 1 Loan Officer in Orange,
+                      CA, according to Scotsman Guide, the leading benchmark for
+                      ranking in the mortgage industry. As an accomplished
+                      mortgage loan originator, Omar has over 18 years of
+                      experience and a proven track-record with helping clients
+                      get pre-approved for a new mortgage loan or refinance.
+                    </p>
+                  </div>
+                  <div class="itemStart">
+                    <a
+                      href="javascript:void(0)"
+                      class="!text-[#0D6FB8] bg-[#A4E4FF] py-3 px-8 rounded-md"
+                      >Apply Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative w-full h-full mortgageSlide">
+        <div
+          class="justCenter flex-col relative w-full h-full px-5 sm:px-10 pt-6 pb-10 space-y-5 lg:space-y-8"
+        >
+          <div
+            class="justCenter flex-col leading-none w-full text-3xl lg:text-5xl uppercase"
+          >
+            <h1 class="grifter">more than</h1>
+            <h1 class="grifter !text-[#24ACE7]">a mortgage</h1>
+          </div>
+
+          <div class="relative w-full">
+            <div class="mortSlider">
+              <div class="slickes w-full mx-2 shadow-lg rounded-lg">
+                <a
+                  href="javascript:void(0)"
+                  class="justCenter flex-col relative space-y-6 w-full p-4"
+                >
+                  <img src="assets/images/mort1.png" class="img-fluid" alt="" />
+                  <div class="itemStart flex-col space-y-2">
+                    <div
+                      class="itemStart flex-col text-2xl uppercase leading-tight space-y-0"
+                    >
+                      <h3 class="grifter">We offer</h3>
+                      <h3 class="grifter">residential mortgage</h3>
+                    </div>
+                    <div class="itemStart leading-tight lg:w-3/4 text-lg">
+                      <p>
+                        Loans and refinancing in Orange County and the
+                        surrounding areas.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="slickes w-full mx-2 shadow-lg rounded-lg">
+                <a
+                  href="javascript:void(0)"
+                  class="justCenter flex-col relative space-y-6 w-full p-4"
+                >
+                  <img src="assets/images/mort2.png" class="img-fluid" alt="" />
+                  <div class="itemStart flex-col space-y-2">
+                    <div
+                      class="itemStart flex-col text-2xl uppercase leading-tight space-y-0"
+                    >
+                      <h3 class="grifter">We offer</h3>
+                      <h3 class="grifter">residential mortgage</h3>
+                    </div>
+                    <div class="itemStart leading-tight lg:w-3/4 text-lg">
+                      <p>
+                        Loans and refinancing in Orange County and the
+                        surrounding areas.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="slickes w-full mx-2 shadow-lg rounded-lg">
+                <a
+                  href="javascript:void(0)"
+                  class="justCenter flex-col relative space-y-6 w-full p-4"
+                >
+                  <img src="assets/images/mort1.png" class="img-fluid" alt="" />
+                  <div class="itemStart flex-col space-y-2">
+                    <div
+                      class="itemStart flex-col text-2xl uppercase leading-tight space-y-0"
+                    >
+                      <h3 class="grifter">We offer</h3>
+                      <h3 class="grifter">residential mortgage</h3>
+                    </div>
+                    <div class="itemStart leading-tight lg:w-3/4 text-lg">
+                      <p>
+                        Loans and refinancing in Orange County and the
+                        surrounding areas.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="slickes w-full mx-2 shadow-lg rounded-lg">
+                <a
+                  href="javascript:void(0)"
+                  class="justCenter flex-col relative space-y-6 w-full p-4"
+                >
+                  <img src="assets/images/mort3.png" class="img-fluid" alt="" />
+                  <div class="itemStart flex-col space-y-2">
+                    <div
+                      class="itemStart flex-col text-2xl uppercase leading-tight space-y-0"
+                    >
+                      <h3 class="grifter">We offer</h3>
+                      <h3 class="grifter">residential mortgage</h3>
+                    </div>
+                    <div class="itemStart leading-tight lg:w-3/4 text-lg">
+                      <p>
+                        Loans and refinancing in Orange County and the
+                        surrounding areas.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative w-full h-full testimonials">
+        <div class="flexy relative w-full h-full py-10 sm:px-10">
+          <div
+            class="absolute -top-2 right-0 lg:-right-1 size-28 p-4 rotate-[30deg] rounded-l-md rounded-b-md shadow-xl z-10 bg-white/55"
+          >
+            <img src="assets/images/moneyBag.png" class="img-fluid" alt="" />
+          </div>
+          <div
+            class="absolute -bottom-5 left-0 lg:-left-2 size-28 p-4 -rotate-[30deg] rounded-l-md rounded-b-md shadow-xl z-10 bg-white/55"
+          >
+            <img src="assets/images/coin.png" class="img-fluid" alt="" />
+          </div>
+          <div
+            class="itemStart relative w-full h-full bg-[#1e1e1e] rounded-lg z-[1] overflow-hidden"
+          >
+            <div
+              class="hidden lg:block absolute -top-24 left-0 w-full h-full max-w-2xl bg-center bg-contain bg-no-repeat -z-[1]"
+              style="background-image: url('/assets/images/testiPat.svg')"
+            ></div>
+            <div
+              class="flexy flex-col relative w-full h-full space-y-6 pt-10 pb-20"
+            >
+              <div
+                class="flexy text-center text-3xl lg:text-7xl uppercase text-white"
+              >
+                <h1 class="grifter lg:tracking-widest">testimonials</h1>
+              </div>
+
+              <div class="relative w-full h-full">
+                <div class="testimonialSlider">
+                  <div class="text-center testiSlide">
+                    <img
+                      src="assets/images/testi1.png"
+                      class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                    />
+                    <div
+                      class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                    >
+                      <div class="flexy gap-x-2">
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                      </div>
+                      <p class="text-md">
+                        To say Omar and his team are great would be an
+                        understatement. They are everything you want in a
+                        lender! Honest, fast, and extremely patient with all our
+                        questions. They were also great at communicating with
+                        the escrow company, agents and all parties involved. We
+                        will definitely be recommending Omar and his team to all
+                        of our friends and family and use him again on future
+                        purchases. Thank you Omar!”
+                      </p>
+                      <p class="text-xl font-bold">Samantha, Brisbane</p>
+                    </div>
+                  </div>
+                  <div class="text-center testiSlide">
+                    <img
+                      src="assets/images/testi2.png"
+                      class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                    />
+                    <div
+                      class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                    >
+                      <div class="flexy gap-x-2">
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                      </div>
+                      <p class="text-md">
+                        To say Omar and his team are great would be an
+                        understatement. They are everything you want in a
+                        lender! Honest, fast, and extremely patient with all our
+                        questions. They were also great at communicating with
+                        the escrow company, agents and all parties involved. We
+                        will definitely be recommending Omar and his team to all
+                        of our friends and family and use him again on future
+                        purchases. Thank you Omar!”
+                      </p>
+                      <p class="text-xl font-bold">Samantha, Brisbane</p>
+                    </div>
+                  </div>
+                  <div class="text-center testiSlide">
+                    <img
+                      src="assets/images/testi3.png"
+                      class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                    />
+                    <div
+                      class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                    >
+                      <div class="flexy gap-x-2">
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                      </div>
+                      <p class="text-md">
+                        To say Omar and his team are great would be an
+                        understatement. They are everything you want in a
+                        lender! Honest, fast, and extremely patient with all our
+                        questions. They were also great at communicating with
+                        the escrow company, agents and all parties involved. We
+                        will definitely be recommending Omar and his team to all
+                        of our friends and family and use him again on future
+                        purchases. Thank you Omar!”
+                      </p>
+                      <p class="text-xl font-bold">Samantha, Brisbane</p>
+                    </div>
+                  </div>
+                  <div class="text-center testiSlide">
+                    <img
+                      src="assets/images/testi4.png"
+                      class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                    />
+                    <div
+                      class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                    >
+                      <div class="flexy gap-x-2">
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                      </div>
+                      <p class="text-md">
+                        To say Omar and his team are great would be an
+                        understatement. They are everything you want in a
+                        lender! Honest, fast, and extremely patient with all our
+                        questions. They were also great at communicating with
+                        the escrow company, agents and all parties involved. We
+                        will definitely be recommending Omar and his team to all
+                        of our friends and family and use him again on future
+                        purchases. Thank you Omar!”
+                      </p>
+                      <p class="text-xl font-bold">Samantha, Brisbane</p>
+                    </div>
+                  </div>
+                  <div class="text-center testiSlide">
+                    <img
+                      src="assets/images/testi5.png"
+                      class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                    />
+                    <div
+                      class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                    >
+                      <div class="flexy gap-x-2">
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                      </div>
+                      <p class="text-md">
+                        To say Omar and his team are great would be an
+                        understatement. They are everything you want in a
+                        lender! Honest, fast, and extremely patient with all our
+                        questions. They were also great at communicating with
+                        the escrow company, agents and all parties involved. We
+                        will definitely be recommending Omar and his team to all
+                        of our friends and family and use him again on future
+                        purchases. Thank you Omar!”
+                      </p>
+                      <p class="text-xl font-bold">Samantha, Brisbane</p>
+                    </div>
+                  </div>
+                  <div class="text-center testiSlide">
+                    <img
+                      src="assets/images/testi6.png"
+                      class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                    />
+                    <div
+                      class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                    >
+                      <div class="flexy gap-x-2">
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                      </div>
+                      <p class="text-md">
+                        To say Omar and his team are great would be an
+                        understatement. They are everything you want in a
+                        lender! Honest, fast, and extremely patient with all our
+                        questions. They were also great at communicating with
+                        the escrow company, agents and all parties involved. We
+                        will definitely be recommending Omar and his team to all
+                        of our friends and family and use him again on future
+                        purchases. Thank you Omar!”
+                      </p>
+                      <p class="text-xl font-bold">Samantha, Brisbane</p>
+                    </div>
+                  </div>
+                  <div class="text-center testiSlide">
+                    <img
+                      src="assets/images/testi7.png"
+                      class="img-fluid w-40 h-40 object-cover mx-auto pt-8"
+                    />
+                    <div
+                      class="content w-full pt-16 flexy flex-col space-y-3 text-white"
+                    >
+                      <div class="flexy gap-x-2">
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-solid fa-star text-[#FFBB00]"></i>
+                        <i class="fa-regular fa-star text-[#FFBB00]"></i>
+                      </div>
+                      <p class="text-md">
+                        To say Omar and his team are great would be an
+                        understatement. They are everything you want in a
+                        lender! Honest, fast, and extremely patient with all our
+                        questions. They were also great at communicating with
+                        the escrow company, agents and all parties involved. We
+                        will definitely be recommending Omar and his team to all
+                        of our friends and family and use him again on future
+                        purchases. Thank you Omar!”
+                      </p>
+                      <p class="text-xl font-bold">Samantha, Brisbane</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative w-full h-full formSec">
+        <div class="flexy relative w-full h-full px-5 sm:px-10 py-10">
+          <div class="grid grid-cols-12 gap-8 w-full mx-auto my-6">
+            <div class="col-span-12 lg:col-span-5 justStart w-full h-full">
+              <div class="space-y-5 justCenter flex-col">
+                <div
+                  class="itemStart flex-col leading-none text-4xl lg:text-6xl uppercase"
+                >
+                  <h1 class="grifter leading-none">Don't Miss</h1>
+                  <h1 class="grifter leading-none">the next</h1>
+                  <h1 class="grifter leading-none text-[#24ACE7]">mortgage</h1>
+                  <h1 class="grifter leading-none text-[#24ACE7]">rate drop</h1>
+                </div>
+
+                <div class="itemStart md:text-lg md:w-2/3">
+                  <p class="leading-tight">
+                    Subscribe to stay up-to-date on our industry insights and
+                    get useful tips and recommendations for loan applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-span-12 lg:col-span-7 flexy w-full h-full relative bg-[#24ACE7] rounded-xl p-5 lg:p-10 overflow-hidden z-[1]"
+            >
+              <div
+                class="hidden lg:block absolute top-0 right-0 size-[22rem] bg-center bg-cover bg-no-repeat -z-[1]"
+                style="background-image: url('/assets/images/trackPatt.svg')"
+              ></div>
+              <form
+                class="w-full grid grid-cols-1 gap-y-6 items-center justify-center mx-auto lg:w-10/12 py-6"
+              >
+                <div class="itemStart flex-col space-y-1.5 w-full">
+                  <label class="text-xl text-white grifter">First Name</label>
+                  <input
+                    type="text"
+                    placeholder="John"
+                    class="px-4 py-2 w-full rounded-sm bg-gray-50"
+                  />
+                </div>
+                <div class="itemStart flex-col space-y-1.5 w-full">
+                  <label class="text-xl text-white grifter">Last Name</label>
+                  <input
+                    type="text"
+                    placeholder="David"
+                    class="px-4 py-2 w-full rounded-sm bg-gray-50"
+                  />
+                </div>
+                <div class="itemStart flex-col space-y-1.5 w-full">
+                  <label class="text-xl text-white grifter"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="consult@mail.com"
+                    class="px-4 py-2 w-full rounded-sm bg-gray-50"
+                  />
+                </div>
+
+                <div class="itemStart w-full font-medium">
+                  <button
+                    class="px-8 py-3 bg-[#A4E4FF] !text-[#0D6FB8] rounded-md"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-[#1e1e1e] relative h-full w-full rounded-t-4xl">
+        <div class="flexy relative w-full h-full p-5 sm:px-10">
+          <div
+            class="itemStart flex-col relative w-full h-full text-white space-y-5"
+          >
+            <div class="grid grid-cols-12 w-full h-full gap-8 pt-5 pb-10">
+              <div
+                class="col-span-12 lg:col-span-7 relative w-full h-full itemStart"
+              >
+                <div class="itemStart flex-col space-y-3 lg:space-y-5">
+                  <a href="index.html" class="">
+                    <h1 class="grifter text-3xl lg:text-5xl text-white">
+                      OC<span class="text-[#24ACE7]">LG</span>
+                    </h1>
+                  </a>
+                  <div class="itemStart lg:w-[55%]">
+                    <p>
+                      © 2021 Omar The Lender, NMLS# 883074. All rights reserved.
+                      Not all applicants will qualify. Rates, programs, and APRs
+                      subject to change at any time without prior notice. All
+                      LTVs represented are based on appraised value. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-span-12 lg:col-span-2 itemStart relative w-full h-full"
+              >
+                <div class="itemStart flex-col space-y-2 lg:space-y-5">
+                  <div class="itemStart text-2xl text-[#24ACE7]">
+                    <h2 class="grifter">Contact</h2>
+                  </div>
+                  <ul
+                    class="text-white itemStart list-inside list-disc flex-col space-y-1.5 text-lg"
+                  >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Omar</a></li>
+                    <li><a href="apply-now.html">Apply Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="col-span-12 lg:col-span-3 flex items-start justify-start lg:justify-around relative w-full h-full"
+              >
+                <div class="itemStart flex-col space-y-2 lg:space-y-5">
+                  <div class="itemStart text-2xl text-[#24ACE7]">
+                    <h2 class="grifter">Contact Info</h2>
+                  </div>
+                  <ul
+                    class="text-white itemStart flex-col space-y-1.5 lg:space-y-6 text-lg"
+                  >
+                    <li>
+                      <a href="mailto:omar@omarthelender.com"
+                        >Omar@Omarthelender.com</a
+                      >
+                    </li>
+                    <li><a href="tel:7142064048">714-206-4048</a></li>
+
+                    <li class="leading-tight">
+                      <a href="javascript:void(0)"
+                        >333 City Blvd W, Ste 700, Orange, CA 92868</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col lg:flex-row items-start lg:items-center justify-start lg:justify-between space-y-3 w-full"
+            >
+              <div class="itemStart">
+                <div class="flex items-center gap-x-3">
+                  <a href="javascript:void(0)" class="w-12">
+                    <img
+                      src="assets/images/facebookWhite.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                  <a href="javascript:void(0)" class="w-12">
+                    <img
+                      src="assets/images/xWhite.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                  <a href="javascript:void(0)" class="w-12">
+                    <img
+                      src="assets/images/instaWhite.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start lg:items-end">
+                <p>Copyright © 2025 Omar The Lender</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
