@@ -85,6 +85,21 @@ a:hover {
 
 /* most used Classes */
 
+.vertLine {
+  position: relative;
+  z-index: 1;
+}
+
+.vertLine::before {
+  position: absolute;
+  top: 28px;
+  content: '';
+  background: #ffffff7a;
+  width: 2px;
+  height: 15rem;
+  z-index: -1;
+}
+
 /* .manHeroImg {
   position: relative;
   z-index: 1;
